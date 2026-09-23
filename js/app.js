@@ -13,7 +13,7 @@
   $("#heroImage").src = config.heroImage || "assets/images/couple-realistic.jpg";
   $("#memoryOne").src = config.memoryOne || "assets/images/memory-01.jpg";
   $("#memoryTwo").src = config.memoryTwo || "assets/images/memory-02.jpg";
-  $("#signature").textContent = config.signature || "Anh.";
+  $("#signature").textContent = config.signature || "Chim.";
   audio.src = config.musicFile || "assets/music/our-song.mp3";
 
   const letterText = window.LETTER_TEXT || "Anh xin lỗi. Mình nói chuyện lại nhé?";
@@ -90,7 +90,7 @@
   const teasingLines = [
     "Anh biết em còn thương mà 🥺",
     "Cho anh cơ hội nhỏ thôi nha?",
-    "Anh mời trà sữa nữa nè!",
+    "Ún achen hong heo",
     "Nút này khó bấm lắm đó 😌"
   ];
   let dodgeCount = 0;

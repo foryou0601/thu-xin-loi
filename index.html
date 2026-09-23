@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Một lời xin lỗi chân thành, được viết bằng tất cả sự iu thương heo.">
+  <meta name="theme-color" content="#7b2336">
+  <title>Mình nói chuyện lại nhé?</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath fill='%237b2336' d='M32 54S6 39 6 20C6 7 23 4 32 16 41 4 58 7 58 20 58 39 32 54 32 54Z'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="petals" id="petals" aria-hidden="true"></div>
+
+  <section class="intro" id="intro" aria-label="Mở lời nhắn">
+    <div class="intro__glow" aria-hidden="true"></div>
+    <div class="envelope-wrap">
+      <p class="eyebrow">GỬI ĐẾN NGƯỜI QUAN TRỌNG NHẤT</p>
+      <button class="envelope" id="openLetter" type="button" aria-label="Mở lá thư">
+        <span class="envelope__back"></span>
+        <span class="envelope__paper">
+          <span>Cho anh một phút nhé?</span>
+          <i>♥</i>
+        </span>
+        <span class="envelope__front"></span>
+        <span class="envelope__flap"></span>
+        <span class="envelope__seal">T</span>
+      </button>
+      <p class="intro__hint"><span></span> Chạm vào phong thư để mở <span></span></p>
+    </div>
+  </section>
+
+  <main id="mainContent" class="main" aria-hidden="true">
+    <nav class="nav" aria-label="Điều hướng">
+      <a class="nav__brand" href="#top" aria-label="Về đầu trang">T <span>♥</span></a>
+      <button class="music" id="musicButton" type="button" aria-label="Bật hoặc tắt nhạc">
+        <span class="music__bars" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+        <span id="musicLabel">Bật nhạc</span>
+      </button>
+    </nav>
+
+    <section class="hero" id="top">
+      <div class="hero__copy reveal">
+        <p class="eyebrow">MỘT LỜI TỪ TRÁI TIM</p>
+        <h1>Anh xin lỗi,<br><em>mình đừng giận nhau nữa nhé?</em></h1>
+        <p class="hero__lead">Anh không muốn đúng trong một cuộc tranh luận mà lại làm người anh thương buồn. Anh ở đây để lắng nghe, để hiểu và để sửa.</p>
+      </div>
+
+      <div class="hero__visual reveal">
+        <div class="photo-frame">
+          <img id="heroImage" src="assets/images/couple-realistic.jpg" alt="Ảnh của hai chúng mình">
+          <div class="photo-frame__note">still choosing you, every day</div>
+        </div>
+        <span class="hero__scribble" aria-hidden="true">♥</span>
+      </div>
+    </section>
+
+    <section class="truth" aria-label="Điều anh muốn nói">
+      <div class="section-heading reveal">
+        <p class="eyebrow">ANH ĐÃ NGHĨ RẤT NHIỀU</p>
+        <h2>Không phải một lời xin lỗi cho qua chuyện.</h2>
+      </div>
+      <div class="truth__grid">
+        <article class="truth-card reveal">
+          <span>01</span>
+          <h3>Anh biết mình đã sai</h3>
+          <p>Anh đã để cảm xúc của mình đi trước sự dịu dàng mà em xứng đáng nhận được.</p>
+        </article>
+        <article class="truth-card reveal">
+          <span>02</span>
+          <h3>Cảm xúc của em là thật</h3>
+          <p>Anh sẽ không né tránh hay xem nhẹ điều khiến em buồn. Anh muốn nghe em nói hết.</p>
+        </article>
+        <article class="truth-card reveal">
+          <span>03</span>
+          <h3>Anh sẽ sửa bằng hành động</h3>
+          <p>Không chỉ hứa. Anh sẽ chậm lại, lắng nghe kỹ hơn và luôn tôn trọng cảm xúc của em.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="memories" aria-label="Kỷ niệm của chúng mình">
+      <div class="memories__copy reveal">
+        <p class="eyebrow">NHỮNG ĐIỀU ANH TRÂN TRỌNG</p>
+        <h2>Ở cạnh em, những ngày bình thường cũng trở nên đáng nhớ.</h2>
+        <p>Hai tấm ảnh này nhắc anh rằng chúng mình đã có thật nhiều khoảnh khắc đáng yêu — và anh không muốn một phút nóng giận che mất tất cả những điều đẹp đẽ đó.</p>
+      </div>
+      <div class="polaroids reveal">
+        <figure class="polaroid polaroid--one">
+          <img id="memoryOne" src="assets/images/memory-01.jpg" alt="Kỷ niệm của hai chúng mình">
+          <figcaption>Ngốc nghếch nhưng vui ghê ♡</figcaption>
+        </figure>
+        <figure class="polaroid polaroid--two">
+          <img id="memoryTwo" src="assets/images/memory-02.jpg" alt="Khoảnh khắc hai chúng mình ở bên nhau">
+          <figcaption>Em là điều dịu dàng nhất.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="letter" id="letter">
+      <div class="letter__shell reveal">
+        <div class="letter__date" id="letterDate"></div>
+        <p class="eyebrow">LÁ THƯ ANH MUỐN EM ĐỌC</p>
+        <h2>Gửi em,</h2>
+        <div class="letter__body" id="letterBody"></div>
+        <div class="letter__sign">
+          <span>Thương em,</span>
+          <strong id="signature">Anh.</strong>
+        </div>
+      </div>
+    </section>
+
+    <section class="answer" id="answer">
+      <div class="answer__inner reveal">
+        <p class="eyebrow">ANH CHỈ XIN MỘT CƠ HỘI</p>
+        <h2>Cho anh được làm em cười lại nhé?</h2>
+        <p>Anh mời em một buổi hẹn, còn địa điểm và món ăn em được toàn quyền chọn.</p>
+        <div class="answer__actions" id="answerActions">
+          <button class="button button--primary" id="yesButton" type="button">Ừ, hết giận rồi ♥</button>
+          <button class="button button--ghost" id="notYetButton" type="button">Chưa đâu nha</button>
+        </div>
+        <p class="answer__small" id="answerSmall">Anh sẽ kiên nhẫn đợi câu trả lời của em.</p>
+      </div>
+    </section>
+
+    <footer>
+      <span>Made with sincerity</span><i>♥</i><span id="footerYear"></span>
+    </footer>
+  </main>
+
+  <div class="success" id="success" role="dialog" aria-modal="true" aria-labelledby="successTitle" hidden>
+    <div class="success__card">
+      <div class="success__heart">♥</div>
+      <p class="eyebrow">CẢM ƠN EM</p>
+      <h2 id="successTitle">Anh biết em thương anh mà!</h2>
+      <p>Anh hứa cuộc nói chuyện tiếp theo sẽ bắt đầu bằng một cái ôm và thật nhiều lắng nghe.</p>
+      <button class="button button--primary" id="closeSuccess" type="button">Ôm một cái nào ♥</button>
+    </div>
+  </div>
+
+  <audio id="backgroundMusic" loop preload="none"></audio>
+  <script src="content/buc-thu.js"></script>
+  <script src="js/config.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

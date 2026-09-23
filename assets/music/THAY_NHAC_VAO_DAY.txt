@@ -1,0 +1,8 @@
+HƯỚNG DẪN THÊM NHẠC
+
+1. Chọn bài hát của hai bạn ở định dạng MP3.
+2. Đổi tên bài hát thành: our-song.mp3
+3. Chép file đó vào chính thư mục này.
+4. Mở lại website. Nút “Bật nhạc” sẽ hoạt động.
+
+Nếu muốn dùng tên file khác, hãy sửa dòng musicFile trong js/config.js.

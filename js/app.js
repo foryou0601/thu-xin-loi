@@ -112,8 +112,14 @@
 
   $("#yesButton").addEventListener("click", () => {
     const modal = $("#success");
+    const box = modal.querySelector(".success__box");
     modal.hidden = false;
-    requestAnimationFrame(() => modal.classList.add("is-visible"));
+    requestAnimationFrame(() => {
+      modal.classList.add("is-visible");
+      box.classList.remove("is-open");
+      void box.offsetWidth;
+      box.classList.add("is-open");
+    });
     burstHearts();
   });
 

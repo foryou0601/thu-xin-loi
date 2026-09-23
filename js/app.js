@@ -112,21 +112,29 @@
 
   $("#yesButton").addEventListener("click", () => {
     const modal = $("#success");
-    const box = modal.querySelector(".success__box");
     modal.hidden = false;
-    requestAnimationFrame(() => {
-      modal.classList.add("is-visible");
-      box.classList.remove("is-open");
-      void box.offsetWidth;
-      box.classList.add("is-open");
-    });
+    modal.classList.remove("image-open");
+    $("#closeSuccess").textContent = "Ôm cái";
+    requestAnimationFrame(() => modal.classList.add("is-visible"));
     burstHearts();
   });
 
   $("#closeSuccess").addEventListener("click", () => {
     const modal = $("#success");
+    const button = $("#closeSuccess");
+
+    if (!modal.classList.contains("image-open")) {
+      modal.classList.add("image-open");
+      button.textContent = "Đóng lại";
+      return;
+    }
+
     modal.classList.remove("is-visible");
-    window.setTimeout(() => { modal.hidden = true; }, 300);
+    window.setTimeout(() => {
+      modal.hidden = true;
+      modal.classList.remove("image-open");
+      button.textContent = "Ôm cái";
+    }, 300);
   });
 
   function burstHearts() {
